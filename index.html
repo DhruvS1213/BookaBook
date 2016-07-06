@@ -17,6 +17,7 @@
 
  	<!-- CSS
    ================================================== -->
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/vendor.css">     
@@ -24,6 +25,9 @@
    <!-- script
    ================================================== -->
 	<script src="js/modernizr.js"></script>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
    <!-- favicons
 	================================================== -->
@@ -35,6 +39,31 @@
 
 	<!-- header 
    ================================================== -->
+   <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sign Up</h4>
+        </div>
+        <div class="modal-body">
+        
+        <form>
+        <p> Name: &nbsp; &nbsp;<input type="text" /> </p>
+        <p> E-mail : &nbsp; <input type="email" /> </p>
+        <input type="submit" value="Submit" />
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
    <header>
 
    	<div class="row">
@@ -51,7 +80,11 @@
 					<li><a class="smoothscroll"  href="#testimonials" title="">Reviews</a></li>
 					<li><a class="smoothscroll"  href="#faq" title="">FAQ</a></li>	
 					<li><a class="smoothscroll"  href="#contactus" title = ""> Contact Us </a></li>				
-					<li><a href="#" title="">Sign Up</a></li>					
+					<li>  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style = "padding : 8px 8px; font-size: 12px; font-family: raleway-heavy, sans-serif; text-transform: uppercase;
+               letter-spacing: 1.5px;">Sign Up</button>
+
+               </li>
+					
 				</ul>
 			</nav>
 
@@ -465,7 +498,7 @@
                <li> 
 
                   <div class="testimonial-author">
-                     <img src="images/avatars/avatar-2.jpg" alt="Author image">
+                     <img src="images/avatars/avatar-1.jpg" alt="Author image">
                      <div class="author-info">
                         Priyam Dey
                         <span>Systems Engineer, TCS</span>
@@ -483,7 +516,7 @@
                <li> 
 
                   <div class="testimonial-author">
-                     <img src="images/avatars/avatar-2.jpg" alt="Author image">
+                     <img src="images/avatars/avatar-1.jpg" alt="Author image">
                      <div class="author-info">
                         Shashi Kant Sharma
                         <span>Systems Engineer, TCS</span>
@@ -501,7 +534,7 @@
                <li> 
 
                   <div class="testimonial-author">
-                     <img src="images/avatars/avatar-2.jpg" alt="Author image">
+                     <img src="images/avatars/avatar-1.jpg" alt="Author image">
                      <div class="author-info">
                         Harsh Patel
                         <span>Systems Engineer, TCS</span>
